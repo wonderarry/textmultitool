@@ -1,0 +1,5387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow#MainWindow{
+	background-color: rgb(43,43,43);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="top_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#top_frame
+{
+	background-color: rgb(43,43,43);
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+	color: rgb(160,160,160);
+}</string>
+         </property>
+         <property name="text">
+          <string>Text Multitool</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="minimize_button">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(170,170,170);
+border-style: double;
+border-color: rgb(170,170,170);
+border-width: 1px;
+border-radius: 8px;
+}
+QPushButton:hover{
+background-color:rgb(70, 230, 70);
+border-style: double;
+border-color: rgb(70,230,70);
+border-width: 1px;
+border-radius: 8px;
+}
+QPushButton:pressed{
+background-color:rgb(0, 180, 0);
+border-style: double;
+border-color: rgb(0,180,0);
+border-width: 1px;
+border-radius: 8px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="close_button">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(170,170,170);
+border-style: double;
+border-color:  rgb(170,170,170);
+border-width: 1px;
+border-radius: 8px;
+}
+QPushButton:hover{
+background-color:rgb(230, 70,70);
+border-style: double;
+border-color: rgb(230,70,70);
+border-width: 1px;
+border-radius: 8px;
+}
+QPushButton:pressed{
+background-color:rgb(180, 0, 0);
+border-style: double;
+border-color: rgb(180,0,0);
+border-width: 1px;
+border-radius: 8px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="common_bottom_frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="option_selection_frame">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#option_selection_frame
+{
+	background-color: rgb(55,55,55);
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>180</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="compare_docs">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Сравнение документов</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="git_get_version">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Извлечение версии</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="create_git_ver">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Создание версии</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="convert_djvu">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Конвертация djvu в pdf</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="convert_photo">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Конвертация фото в скан</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="create_pdf_from_pic">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Создание pdf из png/jpg</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="extract_pics">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Извлечение png из pdf</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="recognize_text">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Распознавание текста pdf</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="settings_about">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+ { background-color: rgb(90, 90, 90);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(90, 90, 90); 
+}
+QPushButton:hover
+ { background-color: rgb(95, 95, 95);
+	color: rgb(235, 235, 235);
+	border-color: rgb(95, 95, 95); }
+QPushButton:pressed
+ { background-color: rgb(115, 115, 115);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130);
+}</string>
+            </property>
+            <property name="text">
+             <string>Настройки, о программе</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stacked_widget">
+         <property name="font">
+          <font>
+           <family>MS Serif</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget#convert_djvu_pdf_tab
+{
+	background-color: rgb(84,84,84);
+}</string>
+         </property>
+         <property name="currentIndex">
+          <number>7</number>
+         </property>
+         <widget class="QWidget" name="document_comparison_tab">
+          <property name="styleSheet">
+           <string notr="true">QWidget#document_comparison_tab
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="document_comparison_descript">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Сравнение документов</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="comparison_expl_frame">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#comparison_expl_frame
+{
+	background-color: rgb(120, 120, 120);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(120, 120, 120)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QPlainTextEdit" name="comparison_expl">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>780</width>
+                <height>200</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="cursor" stdset="0">
+               <cursorShape>ArrowCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="plainText">
+               <string>    Сравнение документов выполняется с помощью программы Diffuse, а потому она должна быть предустановлена на компьютере для работы данной функции.
+
+    Для вставки пути файла в одно из полей необходимо скопировать файл, после чего при открытой программе нажать сокращение клавиш.
+
+    В случае, если скопированы сразу два файла, использование сокращения приведет с моментальному вызову Diffuse для них.</string>
+              </property>
+              <property name="textInteractionFlags">
+               <set>Qt::NoTextInteraction</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="main_comparison_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#main_comparison_frame
+{
+	background-color: rgb(95, 95, 95);
+	color: rgb(225, 225, 225);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95, 95, 95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>25</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="descript_comparison_choose_first">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	color: rgb(230, 230, 230)
+}</string>
+                </property>
+                <property name="text">
+                 <string>Выберите первый файл:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QFrame" name="first_comparison_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <property name="spacing">
+                  <number>12</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="doc_comp_button_1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                   </property>
+                   <property name="text">
+                    <string>Выбрать файл...</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="doc_comp_file_1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="descript_comparison_choose_second">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	color: rgb(230, 230, 230)
+}</string>
+                </property>
+                <property name="text">
+                 <string>Выберите второй файл:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QFrame" name="second_comparison_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <property name="spacing">
+                  <number>12</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="doc_comp_button_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                   </property>
+                   <property name="text">
+                    <string>Выбрать файл...</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="doc_comp_file_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="descript_comparison_do">
+                <property name="minimumSize">
+                 <size>
+                  <width>290</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	color: rgb(230, 230, 230)
+}</string>
+                </property>
+                <property name="text">
+                 <string>Сравните файлы, нажав на кнопку:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="doc_comp_do">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>37</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                </property>
+                <property name="text">
+                 <string>Выполнить сравнение!</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="control_version_tab">
+          <property name="styleSheet">
+           <string notr="true">QWidget#control_version_tab
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="repo_get_ver_descript">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Извлечение версии из репозитория</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="repo_get_ver_plain">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>185</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="lineWrapMode">
+              <enum>QPlainTextEdit::WidgetWidth</enum>
+             </property>
+             <property name="plainText">
+              <string>    Работа с версиями репозитория осуществляется в системе контроля версий git, поэтому для функционирования данной части программы она должна быть установлена.
+    Эта функция работает с существующим репозиторием, извлекая все файлы в выбранную папку.
+    Скопировав папку репозитория и нажав первое сокращение клавиш, вы заполните путь до папки репозитория.
+    Скопировав конечную папку и нажав второе сокращение клавиш, вы заполните путь до конечной папки.
+    Вы можете указать хэш версии сами (на случай, если коммит не виден ниоткуда).</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="botton_control_version_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#botton_control_version_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>4</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="repo_get_repo_folder_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="repo_get_repo_folder_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>22</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите папку репозитория:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="repo_get_repo_folder_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="repo_get_repo_folder_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>20</y>
+                   <width>351</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="repo_get_ver_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLineEdit" name="repo_get_ver_list_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>96</y>
+                   <width>141</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                </widget>
+                <widget class="QListWidget" name="repo_get_ver_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>351</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="repo_get_ver_list_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать версию</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="repo_get_ver_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Выберите версию из списка:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="repo_get_ver_list_load">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Загрузить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="repo_get_end_folder_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="repo_get_end_folder_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>23</y>
+                   <width>211</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите конечную папку:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="repo_get_end_folder_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="repo_get_end_folder_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>20</y>
+                   <width>351</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="repo_get_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="repo_get_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>351</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выгрузить файлы!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="repo_get_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>291</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Выгрузите файлы, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="version_create_tab">
+          <property name="styleSheet">
+           <string notr="true">QWidget#version_create_tab
+
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="git_commit_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Сохранение версии документа</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="git_commit_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>210</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Работа с версиями репозитория осуществляется в системе контроля версий git, поэтому для функционирования данной части программы она должна быть установлена.
+    Данная функция позволяет совершить коммит в репозиторий, или, если репозитория по указанному пути не существует, создать его и уже после этого совершить коммит.
+    Первое сочетание клавиш позволяет выбрать папку репозитория, извлекая путь из буфера копирования.
+    Второе сочетание клавиш позволяет поместить все скопированные файлы в список.
+    Поддерживается исключительно сохранение файлов, но не папок. В качестве альтернативы папкам можно использовать архивы.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_document_save_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_document_save_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QFrame" name="git_commit_repo_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="git_commit_repo_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>22</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите папку репозитория:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="git_commit_repo_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="git_commit_repo_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>20</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="git_commit_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>125</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="git_commit_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ {background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="git_commit_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="git_commit_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="git_commit_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить из списка</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="git_commit_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="pdf_from_pic_commit_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>17</y>
+                   <width>371</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите имя конечного файла без расширения:</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="pdf_from_pic_commit_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>15</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="git_commit_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="git_commit_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Сохранить версию!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="git_commit_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>291</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Сохраните версию, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="convert_djvu_pdf_tab">
+          <property name="styleSheet">
+           <string notr="true">QWidget#convert_djvu_pdf_tab
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="convert_djvu_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Конвертация djvu в pdf</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="convert_djvu_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>210</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Конвертация djvu в pdf выполняется с помощью части djvulibre - ddjvu посредством вызова с помощью командной строки, а потому путь к ddjvu должен находиться в системой переменной PATH.
+
+    Первое сочетание клавиш помещает все скопированные файлы формата .djvu в список. Второе извлекает путь до конечной папки.
+
+    Конечная папка - то. куда будут помещены все выбранные файлы после конвертации. Не указывайте ее, если хотите, чтобы файлы остались в папках оригиналов.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_djvu_to_pdf_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_djvu_to_pdf_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="spacing">
+               <number>30</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="convert_djvu_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="convert_djvu_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="convert_djvu_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="convert_djvu_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="convert_djvu_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить элемент</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="convert_djvu_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="convert_djvu_end_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="convert_djvu_end_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>12</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите конечную папку:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="convert_djvu_end_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>12</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="convert_djvu_end_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>12</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="convert_djvu_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="convert_djvu_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Конвертировать!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="convert_djvu_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Проведите конвертацию, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="convert_photo_to_scan_frame">
+          <property name="styleSheet">
+           <string notr="true">QWidget#convert_photo_to_scan_frame
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="photo_to_scan_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Конвертация фотографий в сканы</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="photo_to_scan_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>270</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Конвертация фотографии в скан выполняется посредством обнаружения самого большого прямоугольного контура и ремасштабированием по его вершинам, а потому документ должен быть прямоугольным. Рекомендуется фотографировать при хорошем освещении на однородной поверхности.
+
+    Первое сочетание клавиш помещает все скопированные файлы в список файлов для &quot;сканирования&quot;. Второе извлекает путь до конечной папки.
+
+    Конечная папка - то, куда будут помещены все выбранные файлы после конвертации. Не указывайте ее, если хотите, чтобы файлы остались в папках оригиналов.
+
+    Конечный результат будет иметь имя исходного файла с суффиксом _scan и в формате png.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_photo_to_scan_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_photo_to_scan_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="photo_to_scan_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="photo_to_scan_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="photo_to_scan_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="photo_to_scan_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="photo_to_scan_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить из списка</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="photo_to_scan_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="photo_to_scan_end_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="photo_to_scan_end_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите конечную папку:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="photo_to_scan_end_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="photo_to_scan_end_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="photo_to_scan_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="photo_to_scan_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Конвертировать!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="photo_to_scan_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>361</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Проведите конвертацию, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="create_pdf_from_pic_frame">
+          <property name="styleSheet">
+           <string notr="true">QWidget#create_pdf_from_pic_frame
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="pdf_from_pic_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Создание pdf из изображений форматов png и jpg</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="pdf_from_pic_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>140</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Первое сочетание клавиш помещает все скопированные файлы формата png и jpg в список файлов для последующего создания из них файла pdf.
+
+    Второе сочетание клавиш извлекает из буфера обмена путь до существующей папки, в которой будет создан файл pdf.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_pdf_from_pic_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_pdf_from_pic_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="pdf_from_pic_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="pdf_from_pic_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_from_pic_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pdf_from_pic_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_from_pic_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить элемент</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_from_pic_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="pdf_from_pic_end_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="pdf_from_pic_end_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите конечную папку:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_from_pic_end_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="pdf_from_pic_end_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="pdf_from_pic_endname_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="pdf_from_pic_endname_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>371</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите имя конечного файла без расширения:</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="pdf_from_pic_endname_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="pdf_from_pic_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="pdf_from_pic_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Начать!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pdf_from_pic_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>291</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Начните операцию, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="extract_pdf_pics">
+          <property name="styleSheet">
+           <string notr="true">QWidget#extract_pdf_pics
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_46">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="extract_from_pics_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Извлечение изображений из файла pdf</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="extract_from_pics_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Первое сочетание клавиш помещает все скопированные файлы формата pdf в список файлов для последующего создания из них файлов png.
+
+    Второе сочетание клавиш извлекает из буфера обмена путь до существующей папки, в которой будут созданы файлы png.
+
+    Конечная папка - то, куда будут помещены все выбранные файлы после конвертации. Не указывайте ее, если хотите, чтобы файлы остались в папках оригиналов.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_extract_from_pics_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_extract_from_pics_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_45">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="extract_from_pics_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="extract_from_pics_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="extract_from_pics_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="extract_from_pics_list_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="extract_from_pics_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить элемент</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="extract_from_pics_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="extract_from_pics_end_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="extract_from_pics_end_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>207</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Укажите конечную папку:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="extract_from_pics_end_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>255</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Выбрать папку...</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="extract_from_pics_end_name">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+	background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}
+QLineEdit:hover{
+	 background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); 
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+}
+QLineEdit:focus{
+	background-color: rgb(100, 100, 100);
+	color: rgb(235, 235, 235);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(190, 190, 190) ;
+}</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="extract_from_pics_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="extract_from_pics_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Извлечь!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="extract_from_pics_do_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>351</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Извлеките изображения, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="pdf_ocr_tab">
+          <property name="styleSheet">
+           <string notr="true">QWidget#pdf_ocr_tab
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="pdf_ocr_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Распознавание текста в файле pdf</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="pdf_ocr_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>225</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Распознавание проводится с помощью OCRmyPDF, поэтому для работы функции должны быть установлены OCRmyPDF, Tesseract и Ghostscript.
+    Первое и второе сочетания клавиш равносильны - они помещает все скопированные файлы формата pdf для последующего распознавания текста в них.
+    В случае, если выбран параметр &quot;игнорировать наличие текстового слоя&quot;, к вызову будет добавлен параметр --force.
+    Язык по умолчанию - английский, именно он будет использован при сканировании, если не выбраны языки.
+    Выбор английского и русского языков сканирования в параметрах понизит точность сканирования.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="bottom_pdf_ocr_frame">
+             <property name="styleSheet">
+              <string notr="true">QFrame#bottom_pdf_ocr_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="pdf_ocr_list_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>140</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>130</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QListWidget" name="pdf_ocr_list_main">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>10</y>
+                   <width>341</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QListWidget
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_ocr_list_add">
+                 <property name="geometry">
+                  <rect>
+                   <x>240</x>
+                   <y>10</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить файл</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pdf_ocr_list_label">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>271</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Составьте список файлов:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_ocr_list_delete">
+                 <property name="geometry">
+                  <rect>
+                   <x>240</x>
+                   <y>50</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Удалить из списка</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pdf_ocr_list_clear">
+                 <property name="geometry">
+                  <rect>
+                   <x>240</x>
+                   <y>90</y>
+                   <width>141</width>
+                   <height>30</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить список</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="pdf_ocr_setup_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="pdf_ocr_setup_addit_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>304</x>
+                   <y>13</y>
+                   <width>131</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Доп. параметры:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pdf_ocr_setup_lang_descript">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>13</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Языки сканирования:</string>
+                 </property>
+                </widget>
+                <widget class="QFrame" name="pdf_ocr_setup_lang_frame">
+                 <property name="geometry">
+                  <rect>
+                   <x>178</x>
+                   <y>10</y>
+                   <width>111</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QFrame#pdf_ocr_setup_lang_frame
+{
+	background-color: rgb(120, 120, 120);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QCheckBox" name="pdf_ocr_setup_lang_ru">
+                  <property name="geometry">
+                   <rect>
+                    <x>5</x>
+                    <y>2</y>
+                    <width>81</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox
+{
+	color: rgb(230,230,230);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Русский</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="pdf_ocr_setup_lang_en">
+                  <property name="geometry">
+                   <rect>
+                    <x>5</x>
+                    <y>22</y>
+                    <width>111</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox
+{
+	color: rgb(230,230,230);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Английский</string>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QFrame" name="pdf_ocr_setup_add_frame">
+                 <property name="geometry">
+                  <rect>
+                   <x>445</x>
+                   <y>10</y>
+                   <width>311</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QFrame#pdf_ocr_setup_add_frame
+{
+	background-color: rgb(120, 120, 120);
+
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QCheckBox" name="pdf_ocr_setup_ignore_check">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>311</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox
+{
+	color: rgb(230,230,230);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Игнорировать наличие текстового слоя</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="pdf_ocr_setup_txt">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>20</y>
+                    <width>311</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox
+{
+	color: rgb(230,230,230);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Создавать файлы .txt с результатами</string>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="pdf_ocr_do_frame">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="pdf_ocr_do_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>415</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>37</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+                 </property>
+                 <property name="text">
+                  <string>Распознать текст!</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pdf_ocr_do_label">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>331</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Начните распознавание, нажав на кнопку: </string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="settings_frame">
+          <property name="styleSheet">
+           <string notr="true">QWidget#settings_frame
+{
+	background-color: rgb(70,70,70);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <property name="bottomMargin">
+            <number>130</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="settings_descript">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+             </property>
+             <property name="text">
+              <string>Настройки, о программе</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="settings_plain">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>350</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="plainText">
+              <string>    Данное приложение позволяет выполнять сравнение документов, вести контроль версий файлов, создавать &quot;сканы&quot; на основе вертикального изображения документа, конвертировать изображения в произвольном порядке в формат PDF, конвертировать DJVU в PDF и распознавать текст файлов PDF.
+
+    Для работы приложения необходимы установленные Diffuse, git, OCRmyPDF, Tesseract (добавив в PATH), Ghostscript, Djvulibre (добавив в PATH).
+
+    Для сворачивания приложения в трей требуется наличие в папке с приложением icon_pic.ico - файла с иконкой.
+
+    Для изменения сочетаний клавиш в папке приложения должен находиться settings.ini - файл настроек.
+
+    Перед использованием сочетаний клавиш требуется скопировать требуемые файлы (Ctrl+C), а после в приложении на нужной вкладке нажать требуемое сокращение.</string>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::NoTextInteraction</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="settings_autoboot_frame">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#settings_autoboot_frame
+{
+	color: rgb(230,230,230);
+	background-color:rgb(95,95,95);
+	border-style: double;
+	border-width: 2px;
+    border-radius: 2px;
+	border-color: rgb(95,95,95)
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QPushButton" name="settings_autoboot_add">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>355</x>
+                <y>10</y>
+                <width>185</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+              </property>
+              <property name="text">
+               <string>Добавить</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="settings_autoboot_descript">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>12</y>
+                <width>311</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color: rgb(230,230,230);
+}</string>
+              </property>
+              <property name="text">
+               <string>Настройки автозапуска:</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="settings_autoboot_delete">
+              <property name="geometry">
+               <rect>
+                <x>580</x>
+                <y>10</y>
+                <width>185</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+ { background-color: rgb(120, 120, 120);
+	color: rgb(245, 245, 245);
+	border-style: double;
+	border-width: 1px;
+    border-radius: 1px;
+	border-color: rgb(120, 120, 120); }
+QPushButton:hover
+ { background-color: rgb(130, 130, 130);
+	color: rgb(245, 245, 245);
+	border-color: rgb(130, 130, 130); }
+QPushButton:pressed
+ { background-color: rgb(110, 110, 110);
+	color: rgb(245, 245, 245);
+	border-color: rgb(190, 190, 190); }</string>
+              </property>
+              <property name="text">
+               <string>Исключить</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
